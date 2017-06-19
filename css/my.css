@@ -1,0 +1,289 @@
+/*!-------------------- Bootstrap3の調整（タブメニュー） --------------------*/
+.nav-tabs {
+  margin: 0px 0px -3px;
+  height: 43px;
+  padding: 0px;
+}
+.nav-tabs > li > a {
+  margin: 0px;
+  border-radius: 4px 4px 0 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 3px #60C060;
+  text-align: center;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 3px transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-bottom: solid 3px #fff;
+}
+.nav-tabs > li.passive > a {
+  color: #ffffff;
+}
+.nav-tabs > li.passive > a:hover,
+.nav-tabs > li.passive > a:focus {
+  color: #ffffff;
+  background-color: #60C060;
+  border-bottom: solid 3px #60C060;
+}
+
+/*!-------------------- レイアウト --------------------*/
+body {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #000;
+}
+html, body {
+  /*! フッターを最下部に表示するため */
+  height: 100%;
+}
+#affix_zone1 {
+  /*! タイトルバー分の縦幅を保持する領域 */
+  height: 50px;
+  background-color: #000;
+}
+#affix_zone2 {
+  /*! メニューバー分の縦幅を保持する領域 */
+  height: 46px;
+  background-color: #000;
+}
+#affix_zone1_index {
+  /*! タイトルバー分の縦幅を保持する領域（indexページ用） */
+  height: 458px;
+  background-color: #000;
+  /*! ダッシュボードのabsolute参照用にrelative */
+  position: relative;
+}
+#affix_zone2_index {
+  /*! メニューバー分の縦幅を保持する領域（indexページ用） */
+  height: 46px;
+  background-color: #000;
+}
+#wrap {
+  /*! フッターを除くページ全体 */
+  /*! 常に縦方向がブラウザの表示幅まで伸び， */
+  /*! かつ最下部にフッターが表示されるよう設定 */
+  min-height: 100%;
+  min-width: 970px;
+  height: auto;
+  width: 100%;
+  margin: 0px auto -100px;
+  padding: 0px 0px 100px;
+  background-color: #fff;
+}
+#wrap_header1 {
+  /*! ヘッダー領域 */
+  height: 50px;
+  min-width: 970px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #408060;
+}
+#header {
+  /*! ヘッダー全体 */
+  width: 970px;
+  background-color: #408060;
+  display: table;
+}
+#header_left {
+  /*! ヘッダー左側 */
+  height: 50px;
+  width: 840px;
+  padding: 0px 10px;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#header_right_a {
+  /*! ヘッダー右側 */
+  height: 50px;
+  width: 130px;
+  background-color: #60A080;
+  color: #333333;
+  text-decoration: none;
+  display: table-cell;
+  text-align: center;
+}
+a:hover#header_right_a {
+  /*! ヘッダー右側マウスオーバー */
+  background-color: #80C0A0;
+}
+#header_right_a > p {
+  /*! ヘッダー右側上下中央揃え */
+  padding: 25px 0px 0px;
+  margin: -0.7em 0px 0px;
+  font-size: large;
+}
+#wrap_header2 {
+  /*! メニュー領域 */
+  min-width: 970px;
+  width: 100%;
+  height: 46px;
+  background-color: #000;
+  border-top: solid 3px #000000;
+  border-bottom: solid 3px #60C060;
+}
+#main_menu {
+  /*! メニュー全体 */
+  width: 970px;
+  background-color: #000;
+}
+#main_menu > .nav-tabs > li {
+  /*! メニュー幅 */
+  width: 194px;
+  background-color: #000;
+}
+#contents {
+  /*! 内容領域 */
+  width: 970px;
+  padding: 0px 15px;
+}
+#footer {
+  /*! フッター領域 */
+  border-top: solid 2px #60C060;
+  background-color: #000;
+  height: 70px;
+  min-width: 970px;
+  margin: 30px auto 0;
+  padding: 0;
+}
+#footer > p {
+  /*! フッター文字 上下中央揃え */
+  text-align: center;
+  font-size: x-small;
+  color: #60C060;
+  padding-top: 33px;
+  margin-top: -0.5em;
+}
+
+/*!-------------------- 内容 --------------------*/
+.contents-title {
+  /*! セクションタイトル */
+  color: #408060;
+  padding: 20px 5px;
+  margin: 20px 0px;
+}
+.contents-title > h3 {
+  /*! セクションタイトル調整 */
+  margin: 0px;
+}
+.contents-element, .contents-element-primary {
+  /*! 要素 */
+  padding-bottom: 40px;
+}
+.section-line {
+  /*! 区切り線 */
+  border-top: solid 2px #60C060;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.contents-element-primary > h4 {
+  color: #E49B0F;
+}
+.contents-element-primary > .section-line {
+  border-top: solid 2px #E49B0F;
+}
+
+
+/*!-------------------- ホーム --------------------*/
+#wrap_dashboard {
+  /*! ダッシュボード領域 */
+  padding: 0px;
+  margin: 0px;
+  min-width: 970px;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 50px;
+}
+.dashboard {
+  /*! ダッシュボード全体（1行） */
+  width: 970px;
+  height: 194px;
+  padding: 0px;
+  background-color: #040;
+  display: table;
+}
+.dashboard a {
+  /*! ダッシュボードの1パネル領域 */
+  padding: 0px;
+  margin: 0px;
+  display: table-cell;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+}
+.dashboard-panel {
+  /*! ダッシュボードの1パネル全体 */
+  position: relative;
+  width: 194px;
+  height: 194px;
+  padding: 0px;
+  margin: 0px;
+}
+.dashboard-panel > img {
+  /*! パネルの半透明化　各ブラウザ用 */
+  /*! my.jsも参照のこと */
+  width: 194px;
+  height: 194px;
+  filter:alpha(opacity=40);
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+}
+.dashboard-panel-title {
+  /*! ダッシュボードの1パネルのタイトル */
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 6px;
+  margin: 0px;
+}
+.news-date {
+  /*! お知らせの日時 */
+  color: #a0a0a0;
+  text-align: right;
+}
+
+/*!-------------------- 研究テーマ --------------------*/
+.researches-image > img {
+  /*! 画像領域画像 */
+  width: 100%;
+}
+.researches-text > p {
+  /*! 紹介文領域段落 */
+  padding-left: -1em;
+  text-indent: 1em;
+}
+.researches-publications {
+  /*! 論文領域 */
+  padding-top: 10px;
+  color: #888;
+  font-size: small;
+}
+
+/*!-------------------- メンバー --------------------*/
+.members-pos {
+  /*! 役職 */
+  background-image: url("../members-pos-background.png");
+  padding: 3px 6px;
+  margin: 6px 0px;
+}
+.members-pos > p {
+  /*! 役職の段落 */
+  color: #408060;
+  padding: 0px;
+  margin: 0px;
+}
+.row-members {
+  /*! メンバー表の上下カーニング*/
+  padding-bottom: 2px;
+}

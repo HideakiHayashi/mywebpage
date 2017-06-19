@@ -1,0 +1,20 @@
+/*!-------------------- Englishページ用にmy.cssを一部上書き変更 --------------------*/
+body {
+  /*! Goolge Fonts のWebフォントを使用 */
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main_menu > .nav-tabs > li {
+  /*! Englishページ用メニュー幅 */
+  width: 323px;
+}
+
+#main_menu > .nav-tabs > li:first-child {
+  /*! 割り切れない余りの調整 */
+  width: 324px;
+}
+
+#header_right_a > p {
+  margin: -0.85em 0px 0px;
+  font-size: 1.2em;
+}
